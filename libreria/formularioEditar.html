@@ -1,0 +1,77 @@
+<?php
+echo'
+<div id="formulario'.$contador.'" style="display:none; height:auto; font-size:13px;" title="Editar">
+<center><div class="cargandoEditar'.$contador.'" style="display:none;"><img src="imagenes/iconos/ajaxloader07.gif"></div>
+<div class="Exito'.$contador.'" style=" display:none; width:210px; height:48px; color:blue;"><img src="imagenes/iconos/check.png" height="48" width="48" style="float:left;"/><span style="margin-top:10px;">Carga completada !!</span></div></center>
+<form id="form'.$contador.'" enctype="multipart/form-data" method="post" action="libreria/editar.php" >
+		<div class="response'.$contador.'"></div>
+                <div id="agrupador">
+                <b>Ubicacion</b><br>
+                <input type="text" value="'.$fila["Ubicacion"].'" name="Ubicacion" id="Ubicacion'.$contador.'" placeholder="Ubicacion" title="Ubicacion" required/>
+                </div>
+                <div id="agrupador">
+                <b>Nombre</b><br>
+                <input type="text" value="'.$fila["Nombre"].'" name="Nombre" id="Nombre'.$contador.'" placeholder="Nombre" title="Nombre" required/>
+                </div>
+                <div id="agrupador">
+                <b>Direccion IP</b><br>
+                <input type="text" value="'.$fila["Direccion_IP"].'" name="Direccion_IP" id="Direccion_IP'.$contador.'" placeholder="Direccion_IP" title="Direccion_IP" required/>
+                </div>
+                <div id="agrupador">
+                <b>MAC Address</b><br>
+                <input type="date" value="'.$fila["MAC_Address"].'" name="MAC_Address" id="MAC_Address'.$contador.'" placeholder="MAC_Address" title="MAC_Address" required/>
+                </div>
+                <div id="agrupador">
+                <b>Modelo</b><br>
+                <input type="date" value="'.$fila["Modelo"].'" name="Modelo" id="Modelo'.$contador.'" placeholder="Modelo" title="Modelo" required/>
+                </div>
+                <div id="agrupador">
+                <b>Numero de Serie</b><br>
+                <input type="date" value="'.$fila["Numero_de_Serie"].'" name="Numero_de_Serie" id="Numero_de_Serie'.$contador.'" placeholder="Numero_de_Serie" title="Numero_de_Serie" required/>
+                </div>
+                <div id="agrupador">
+                <b>Fecha Mantenimiento</b><br>
+                <input type="date"value="'.$fila["Ultima_Fecha_Mantenimiento"].'" name="Ultima_Fecha_Mantenimiento" id="Ultima_Fecha_Mantenimiento'.$contador.'" placeholder="Ultima_Fecha_Mantenimiento" title="Ultima Fecha Mantenimiento" required/>
+                </div>
+                <div id="agrupador">
+                <b>Acceso a Internet</b><br>
+                <select value="'.$fila["Acceso_a_Internet"].'" name="Acceso_a_Internet" id="Status">
+                    <option>SI</option>
+                    <option>NO</option>
+                </select>
+                </div>
+               <fieldset style="border:1px solid#F00; float:left; width:590px;"><legend><b>Sistemas Instalados</b></legend>
+                        <input type="checkbox" name="financiero" value="'.$fila['financiero'].'"';if($fila['financiero']!= NULL) echo 'checked="checked"'; echo '>financiero
+                        <input type="checkbox" name="sigho" value="'.$fila['sigho'].'"';if($fila['sigho']!= NULL) echo 'checked="checked"'; echo '>SIGHO
+                        <input type="checkbox" name="imagenologia" value="'.$fila['imagenologia'].'"';if($fila['imagenologia']!= NULL) echo 'checked="checked"'; echo '>imagenologia
+                        <input type="checkbox" name="farmacia" value="'.$fila['farmacia'].'"';if($fila['farmacia']!= NULL) echo 'checked="checked"'; echo '>farmacia
+                        <input type="checkbox" name="cajas" value="'.$fila['cajas'].'"';if($fila['cajas']!= NULL) echo 'checked="checked"'; echo '>cajas
+                        <input type="checkbox" name="cobranza" value="'.$fila['cobranza'].'"';if($fila['cobranza']!= NULL) echo 'checked="checked"'; echo '>cobranza
+                        <input type="checkbox" name="comercializacion" value="'.$fila['comercializacion'].'"';if($fila['comercializacion']!= NULL) echo 'checked="checked"'; echo '>comercializacion
+                        <input type="checkbox" name="sistema_cirugia" value="'.$fila['sistema_cirugia'].'"';if($fila['sistema_cirugia']!= NULL) echo 'checked="checked"'; echo '>sistemas cirugias
+                        <input type="checkbox" name="sistema_cocina" value="'.$fila['sistema_cocina'].'"';if($fila['sistema_cocina']!= NULL) echo 'checked="checked"'; echo '>sistema cocina
+                        <input type="checkbox" name="sistema_checador" value="'.$fila['sistema_checador'].'"';if($fila['sistema_checador']!= NULL) echo 'checked="checked"'; echo '>sistema checador
+                        <input type="checkbox" name="sistema_web" value="'.$fila['sistema_web'].'"';if($fila['sistema_web']!= NULL) echo 'checked="checked"'; echo '>sistema web
+                        <input type="checkbox" name="sistema_layout" value="'.$fila['sistema_layout'].'"';if($fila['sistema_layout']!= NULL) echo 'checked="checked"'; echo '>sistema layout
+                    </fieldset>
+                <div id="agrupador">
+                <b>Status</b><br>
+                <select value="'.$fila["Status"].'" name="Status" id="Status">
+                    <option>A</option>
+                    <option>B</option>
+                    <option>S</option>
+                </select >
+                </div>
+                <div id="agrupador">
+                <b>Observaciones</b><br>
+                <textarea type="text" name="Observaciones" id="Observaciones" maxlength="100" style="width:300px;" placeholder="Observaciones" title="Observaciones" required> '.$fila["Observaciones"].'</textarea>
+                </div>
+                <div id="agrupador" style="top:20px;">
+                <input type="submit" id="submit" value="Enviar">
+                </div>
+</form>
+</div>
+';
+?>
+
+

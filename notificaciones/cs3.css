@@ -1,0 +1,500 @@
+body{
+    font-family:"helvetica, arial";
+    font-size:16px;
+    background:Ghostwhite;
+}
+h2
+{
+    text-align:center;
+    color:black;
+    text-shadow:5px 5px 10px rgba(0,0,0,0.5);/*poner sombra*/
+    padding-top:20px;
+}
+label{
+    padding:3px;
+    margin:3px;
+}
+a{
+    color:orange;
+}
+b{
+    color:blue;
+}
+span{
+    display:block;
+    float:left;
+    position:relative;
+    color:teal;
+}
+a{
+  text-decoration: none;
+  color: green;
+}
+ul, ol{
+  list-style: none;
+}
+.nav{
+  position: relative;
+}
+.nav li a{
+  color: olive;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+.nav li a:hover{
+  background-color: #434343;
+
+
+}
+.nav>li{
+  display: inline-block;
+
+}
+.nav li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+  background-color:  #343235;
+}
+.nav li:hover> ul{
+  display: block;
+}
+.nav li ul li {
+  position: relative;
+}
+.nav li ul li ul{
+  right: -140px;
+  top: 0px;
+}
+#login
+{
+    width:350px;
+    height:auto;
+    box-shadow:0px 5px 10px rgba(0,0,0,0.5);/*poner sombra*/
+    border-radius:7px;
+    margin:auto;
+    text-align:left;
+    padding-top: 1px;
+    position: relative;
+    top: 50px;
+    padding-bottom: 30px;
+}
+#login label
+{
+    padding-left: 10px;
+}
+#login h1
+{
+    text-align: center;
+    text-shadow:0px 5px 10px rgba(0,0,0,0.8);/*poner sombra*/
+}
+#divicion
+{
+    width:100%;
+    border-bottom:1px solid#CCC;
+    margin-bottom:30px;
+}
+#entrar
+{
+    width:200px;
+    height:50px;
+    background:yellow;
+    font-size:30px;
+    border-radius:7px;
+    position: relative;
+    display:block;
+    margin:auto;
+    margin-top: 30px;
+}
+.texbox
+{
+    width:300px;
+    height:30px;
+    border-radius:5px;
+    margin:0px auto;
+    position:relative;
+    display:block;
+    background-position:left center;
+    background-color:#f4f4f4;
+    background-image:url(imagenes/iconos/Usuario.png);
+    background-repeat:no-repeat;
+    padding-left: 20px;
+}
+.password
+{
+    width:300px;
+    height:30px;
+    border-radius:5px;
+    margin:0px auto;
+    position:relative;
+    display:block;
+    background-position:left center;
+    background-color:#f4f4f4;
+    background-image:url(imagenes/iconos/password.png);
+    background-repeat:no-repeat;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+/***************************fin del index*******************************************/
+
+
+/***************************comiendo admin cabecera*******************************************/
+#administrador
+{
+    width:1024px;
+    height:auto;
+    margin:auto;
+    text-align:center;
+    box-shadow:0px 5px 10px rgba(0,0,0,0.5);/*poner sombra*/
+    border-radius:7px;
+    padding-bottom:13px;
+    background-color:#edf0f2;
+}
+#administrador .menuArriba
+{
+    width:100%;
+    height:73px;
+    background-image:url(imagenes/barraarriba.png);
+    border-radius:7px 7px 0px 0px;
+}
+#administrador .logo
+{
+    width:250px;
+    height:55px;
+    background-image:url(imagenes/logo.png);
+    position:absolute;
+    display:block;
+    cursor:pointer;
+    top:12px;
+    left:210px;
+    border-radius:5px;
+}
+#administrador .muestrousuario
+{
+    width:auto;
+    height:auto;
+    float:left;
+    position:relative;
+    left:380px;
+    top:25px;
+    text-align:left;
+}
+#administrador .muestrousuario a
+{
+    color:black;
+    text-decoration:none;
+}
+#administrador .muestrousuario a:hover
+{
+    color:red;
+}
+#administrador #Agregar
+{
+    background-image:url(imagenes/Agregarnota.png);
+    width:400px;
+    height:41px;
+    float:right;
+    position:relative;
+    top:12px;
+    border:0px;
+    margin-right:10px;
+    cursor: pointer;
+    background-color:#c0edab;
+}
+/***************************formulario*******************************************/
+#Formulario
+{
+    text-align:left;
+    margin: 0px;
+}
+#agrupador
+{
+    position:relative;
+    float:left;
+    font-size:16px;
+    margin-right:8px;
+}
+#agrupador input
+{
+    width:200px;
+    border-radius:5px;
+    position:relative;
+}
+#submit
+{
+    width:200px;
+    height:50px;
+    background:yellow;
+    font-size:30px;
+    border-radius:7px;
+    display:block;
+}
+/***************************fin del formulario*******************************************/
+
+/***************************comienzo de pantalla*******************************************/
+#Menu
+{
+    width:100%;
+    height:40px;
+    position:relative;
+    padding-top:15px;
+    background-color:#edf0f2;
+}
+#buscador
+{
+    width:900px;
+    height:64px;
+    background-color:#dae2e7;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:10px;
+    margin-top:20px;
+    border-radius:4px;
+    border:2px solid#CCC;
+    text-align:left;
+}
+#buscador #mostrar
+{
+    width:auto;
+    height:auto;
+    position:relative;
+    display:block;
+    left:10px;
+    float:left;
+    margin:12px auto;
+}
+#buscador #selector
+{
+    width:150px;
+    height:34px;
+    border-radius:4px;
+    background-color:#ebf0f3;
+    margin-top:2px;
+    border:1px solid#CCC;
+}
+#buscador #agrupador
+{
+    position:relative;
+    float:right;
+    width:auto;
+    height:auto;
+    margin-top:15px;
+    display:block;
+}
+#buscador #rango
+{
+    position:relative;
+    float:left;
+    text-align:left;
+    background-color:#ecf1f3;
+    border-radius:4px;
+    margin-right:5px;
+}
+#buscador #rango #rangobutton
+{
+    padding-left:15px;
+    cursor:pointer;
+    background-color: white;
+    background-repeat:no-repeat;
+    border-radius:4px;
+    border:0px;
+    width:200px;
+    height:34px;
+    display:block;
+    color:red;
+}
+#buscador #rango #rangobutton img
+{
+    float:right;
+    margin-bottom:-4px;
+}
+#rangoFecha
+{
+    width:auto;
+    height:auto;
+    display:none;
+}
+
+#buscador #Buscar
+{
+    position:relative;
+    float:left;
+    width:auto;
+    height:auto;
+}
+#buscador #Buscar .Buscar
+{
+    width:180px;
+    height:28px;
+    border-radius:4px;
+    display:block;
+    margin-left:4px;
+    float:left;
+}
+#buscador #botonBuscar
+{
+    width:98px;
+    height:37px;
+    display:block;
+    background-image:url(imagenes/buscar.png);
+    position:relative;
+    float:left;
+    margin-left:10px;
+    text-decoration:none;
+    border:0px;
+    cursor: pointer;
+}
+/****************************fin del buscador***********************/
+#editar
+{
+    background-image:url(imagenes/iconos/editar.png);
+    width:24px;
+    height:24px;
+    border:0px;
+    cursor: pointer;
+    background-color:#edf0f2;
+}
+#borrar
+{
+    background-image:url(imagenes/iconos/borrar.png);
+    width:24px;
+    height:24px;
+    border:0px;
+    cursor: pointer;
+    background-color:#edf0f2;
+}
+.Despliege
+{
+    width:100%;
+    height:40px;
+    position:relative;
+    background-color:#edf0f2;
+    border-bottom:1px solid#ccc;
+    text-align:center;
+    font-size:13px;
+
+}
+.DespliegeMenu
+{
+    width:100%;
+    height:40px;
+    position:relative;
+    background-color:#edf0f2;
+    border-bottom:1px solid#ccc;
+    text-align:center;
+    font-size:13px;
+}
+.Despliege #Despliege
+{
+    display:block;
+}
+.Despliege #Despliege p
+{
+    padding:0px;
+    margin-top:10px;
+}
+.Despliege .article
+{
+    position:relative;
+    float:left;
+    width:230px;
+    height:40px;
+    text-align:center;
+    overflow: hidden;
+}
+
+.Despliege .mp4
+{
+    position:relative;
+    float:left;
+    width:50px;
+    height:40px;
+    margin-left: 55px;
+}
+.Despliege .mp4 a
+{
+    text-decoration:none;
+    display:block;
+    width:24px;
+    height:24px;
+    background-image:url(imagenes/iconos/mp4.png);
+    background-repeat:no-repeat;
+    outline:none;
+}
+.Despliege .mp4 a:hover
+{
+    background-image:url(imagenes/iconos/mp4_2.png);
+    background-repeat:no-repeat;
+}
+.Despliege .Link
+{
+    position:relative;
+    float:left;
+    width:50px;
+    height:40px;
+    margin-right:40px;
+}
+.Despliege .Link a
+{
+    text-decoration:none;
+    display:block;
+    width:24px;
+    height:24px;
+    background-image:url(imagenes/iconos/link.png);
+    background-repeat:no-repeat;
+    outline:none;
+}
+.Despliege .Link a:hover
+{
+    background-image:url(imagenes/iconos/link2.png);
+    background-repeat:no-repeat;
+}
+.Despliege .editar
+{
+    position:relative;
+    float:left;
+    width:50px;
+    height:40px;
+}
+.Despliege .borrar
+{
+    position:relative;
+    float:left;
+    width:50px;
+    height:40px;
+}
+/***************************fin de pantalla*******************************************/
+.MensajeError
+{
+    width:300px;
+    height:auto;
+    box-shadow:0px 5px 10px rgba(0,0,0,0.5);/*poner sombra*/
+    border-radius:7px;
+    margin:auto;
+    text-align:center;
+}
+
+.response
+{
+    color:red;
+}
+.Cargando
+{
+    width:50px;
+    height:50px;
+    background-image:url(imagenes/iconos/ajaxloader07.gif);
+    display:none;
+}
+.Exito
+{
+    display:none;
+    width:210px;
+    height:48px;
+    color:blue;
+}
+.blanco{
+    background: white;
+    cursor: pointer;
+}

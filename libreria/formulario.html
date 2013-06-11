@@ -1,0 +1,28 @@
+<center><div class="Exito" style=" display:none; width:210px; height:48px; color:blue;"><img src="imagenes/iconos/check.png" height="48" width="48" style="float:left;"/><span style="margin-top:10px;">Carga completada !!</span></div></center>
+<center><div class="cargando" style="display:none;"><img src="imagenes/iconos/ajaxloader07.gif"></div></center>
+<form class="form" enctype="multipart/form-data">
+		<div class="response"></div>
+                <div id="agrupador">
+                <b>Fecha notificada</b><br>
+                <input type="date" name="fecha" id="Ultima_Fecha_Mantenimiento" placeholder="Ultima_Fecha_Mantenimiento" title="Ultima Fecha Mantenimiento" required/>
+                </div>
+               
+                <div id="agrupador">
+                <b>notificacion nueva</b><br>
+                <textarea type="text" name="nota" id="Observaciones" maxlength="100" style="width:300px;" placeholder="Observaciones" title="Observaciones" required> </textarea>
+                </div>
+
+                 <div id="agrupador" style="margin-right:12px;">
+                <b>Status</b><br>
+                <select name="status" id="Status">
+                    <option>Resuelto</option>
+                    <option>Pendiente</option>
+                    <option>Cancelado</option>
+                </select>
+                </div>
+                <div id="agrupador" style="top:20px;">
+                <input type="submit" id="submit" value="Enviar">
+                </div>
+</form>
+
+

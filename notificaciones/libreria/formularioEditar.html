@@ -1,0 +1,38 @@
+<?php
+echo'
+<div id="formulario'.$contador.'" style="display:none; height:auto; font-size:13px;" title="Editar">
+<center><div class="cargandoEditar'.$contador.'" style="display:none;"><img src="imagenes/iconos/ajaxloader07.gif"></div>
+<div class="Exito'.$contador.'" style=" display:none; width:210px; height:48px; color:blue;"><img src="imagenes/iconos/check.png" height="48" width="48" style="float:left;"/><span style="margin-top:10px;">Carga completada !!</span></div></center>
+<form id="form'.$contador.'" enctype="multipart/form-data" method="post" action="libreria/editar.php" >
+		<div class="response'.$contador.'"></div>
+             <div id="agrupador">
+                <b>Titulo</b><br>
+                <input type="Text" name="titulo" value="'.$fila["titulo"].'" title="titulo" maxlength="35"required/>
+                </div>
+               
+                <div id="agrupador">
+                    <b>modificar nueva</b><br>
+                    <textarea name="nota" id="Observaciones'.$contador.'" maxlength="140" style="width:478px; height:100px;" title="Descripcion" required>'.$fila["nota"].'
+                    </textarea>
+                </div>
+                <div id="agrupador">
+                <b>Regiones: </b><br>
+                <select id="selector" name="region">
+                    <option value="'.$fila["region"].'">'.$fila["region"].'</option>
+                    <option value="Municipal">Municipal</option>
+                    <option value="Estatal"> Estatal</option>
+                    <option value="Regional">Regional</option>
+                    <option value="Nacional">Nacional</option>
+                    <option value="Internacional">Internacional</option>
+                </select>
+                </div>
+
+                <div id="agrupador" style="top:20px; width:100%;">
+                    <input type="submit" id="submit" style="margin:0px auto;" value="editar">
+                </div>
+</form>
+</div>
+';
+?>
+
+
